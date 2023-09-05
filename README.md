@@ -1,13 +1,45 @@
-# Sample Hardhat Project
+# PocketPay Payment
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+## Run Locally
 
-Try running some of the following tasks:
+Clone the project
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.ts
+```bash
+  git clone https://github.com/pocketpayfinance/pocketpay-bnb-contract.git
+```
+
+Go to the project directory
+
+```bash
+  cd pocketpay-bnb-contract
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Compile
+
+```bash
+  npx hardhat compile
+```
+
+Test
+
+```bash
+  npx hardhat test
+```
+
+Deploy on Arbitrum Goerli
+
+```bash
+  npx hardhat run scripts/deploy.ts --network opbnb_testnet
+```
+
+Help
+
+```bash
+  npx hardhat help
 ```
